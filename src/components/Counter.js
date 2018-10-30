@@ -1,8 +1,6 @@
 import React from 'react';
 
-const Counter = props => {
-	let { score, index, changeScore } = props;
-
+const Counter = ({ score, index, changeScore }) => {
 	return (
 		<div className="counter">
 			<button
