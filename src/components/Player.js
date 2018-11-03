@@ -1,7 +1,5 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
 import Counter from './Counter';
-import Stats from './Stats';
 
 class Player extends PureComponent {
 	render() {
@@ -20,13 +18,5 @@ class Player extends PureComponent {
 		);
 	}
 }
-
-Stats.propTypes = {
-	players: PropTypes.arrayOf(
-		PropTypes.shape({
-			score: PropTypes.number
-		})
-	)
-};
 
 export default Player;
